@@ -27,6 +27,14 @@ class Home extends StatelessWidget {
                 'CH4 Concentration: ${ble.ch4Concentration.value} ppm',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               )),
+          Obx(() => Text(
+                'CO2 Concentration: ${ble.co2Concentration.value} ppm',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+              )),
+          Obx(() => Text(
+                'Battery Charge: ${ble.battPercent.value}%',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+              )),
         ])));
   }
 }
